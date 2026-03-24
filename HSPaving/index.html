@@ -1027,11 +1027,13 @@
     }
 
     .footer-contact {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem 1.2rem;
-      align-items: center;
-    }
+  display: flex;
+  flex-direction: row; /* Forces items side-by-side */
+  flex-wrap: wrap;     /* Allows wrapping only if the screen is very small */
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;         /* Adds even spacing between all items */
+}
 
     .footer-contact a {
       color: var(--accent);
@@ -1528,24 +1530,22 @@
       </section>
     </main>
 
-    <footer>
-      <div class="footer-inner">
-        <div>
-          &copy; <span id="year"></span> H&amp;S Paving. All rights reserved.
-        </div>
-       
-      </div>
-    </footer>
+   <footer>
+  <div class="footer-inner">
+    <div>
+      &copy; <span id="year"></span> H&S Paving. All rights reserved.
+    </div>
+    <div class="footer-contact">
+      <span>Call:</span>
+      <a href="tel:7656238025" style="color: #a6ff00; text-decoration: none; font-weight: bold;">Debbie: (765) 623-8025</a>
+      <span class="footer-dot" style="background-color: #444; display: inline-block; width: 4px; height: 4px; border-radius: 50%; vertical-align: middle; margin: 0 8px;"></span>
+      <a href="tel:3173154377" style="color: #a6ff00; text-decoration: none; font-weight: bold;">Harry: (317) 315-4377</a>
+      <span class="footer-dot" style="background-color: #444; display: inline-block; width: 4px; height: 4px; border-radius: 50%; vertical-align: middle; margin: 0 8px;"></span>
+      <span>Email:</span>
+      <a href="mailto:hspaving70@outlook.com" style="color: #a6ff00; text-decoration: none; font-weight: bold; margin-left: 8px;">hspaving70@outlook.com</a>
+    </div>
   </div>
-<div class="footer-contact">
-    <span style="color: #ffffff;">Call:</span>
-    <a href="tel:7656238025" style="color: #a6ff00; text-decoration: none; font-weight: bold; margin: 0 10px;">Debbie: (765) 623-8025</a>
-    <span class="footer-dot" style="background-color: #444; display: inline-block; width: 4px; height: 4px; border-radius: 50%; vertical-align: middle;"></span>
-    <a href="tel:3173154377" style="color: #a6ff00; text-decoration: none; font-weight: bold; margin: 0 10px;">Harry: (317) 315-4377</a>
-    <span class="footer-dot" style="background-color: #444; display: inline-block; width: 4px; height: 4px; border-radius: 50%; vertical-align: middle;"></span>
-    <span style="color: #ffffff;">Email:</span>
-    <a href="mailto:hspaving70@outlook.com" style="color: #a6ff00; text-decoration: none; font-weight: bold; margin-left: 10px;">hspaving70@outlook.com</a>
-</div>
+</footer> 
   <script>
     // Year in footer
     document.getElementById("year").textContent = new Date().getFullYear();
