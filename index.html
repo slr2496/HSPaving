@@ -1613,5 +1613,19 @@
       if (e.key === "ArrowLeft") showNext(-1);
     });
   </script>
+    <script>
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has('success')) {
+    alert('Thank you! Your quote request has been sent successfully.');
+    <script>
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has('success')) {
+    alert('Thank you! Your quote request has been sent successfully.');
+    // Add this line to clean the URL:
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
+</script>
+  }
+</script>
 </body>
 </html>
