@@ -1128,6 +1128,7 @@
     <header>
       <div class="nav-inner">
         <div class="brand">
+          <img src="site-assets/hspaving-site.png" alt="H&S Paving Logo" style="height: 40px; width: auto;">
           <div class="brand-mark"></div>
           <div class="brand-text">
             <div class="brand-name">H&S Paving</div>
@@ -1612,22 +1613,12 @@
       if (e.key === "ArrowRight") showNext(1);
       if (e.key === "ArrowLeft") showNext(-1);
     });
+    <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('success')) {
+      alert('Thank you! Your quote request has been sent successfully.');
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
   </script>
-    <script>
-  const urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.has('success')) {
-    alert('Thank you! Your quote request has been sent successfully.');
-    <script>
-  const urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.has('success')) {
-    alert('Thank you! Your quote request has been sent successfully.');
-    // Add this line to clean the URL:
-    <script>
-  const urlParams = new URLSearchParams(window.location.search);
-  if (urlParams.has('success')) {
-    alert('Thank you! Your quote request has been sent successfully.');
-    window.history.replaceState({}, document.title, window.location.pathname);
-  }
-</script>
 </body>
 </html>
